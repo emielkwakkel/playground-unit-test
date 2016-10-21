@@ -1,0 +1,28 @@
+{
+  "name": "todo",
+  "version": "0.0.1",
+  "description": "Basic todo app for Unit Test playgroundsession",
+  "main": ".",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.html, *.js, css/*.css\""
+  },
+  "author": "Emiel Kwakkel",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "chai": "^3.5.0",
+    "karma": "^1.3.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sinon": "^1.0.5",
+    "karma-spec-reporter": "0.0.26",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
