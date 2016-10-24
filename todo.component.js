@@ -1,3 +1,20 @@
-/**
- * Created by emiel on 21/10/2016.
- */
+(function() {
+    'use strict';
+
+    angular
+        .module('todo')
+        .component('todo', {
+            templateUrl: 'todo.html',
+            bindings: {
+                item: '='
+            },
+            controller: controller
+        });
+
+    controller.$inject = ['TodoService'];
+
+    function controller(todoService) {
+        this.checkTodo = todoService.check;
+    }
+
+})();

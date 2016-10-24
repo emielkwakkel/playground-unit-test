@@ -39,14 +39,12 @@
                 return;
             }
 
-            // Add state to the object
-            todo.state = TODO_STATUS.OPEN;
-            todo.id = id;
-            id += 1;
-            todos.push(todo);
-            this.newTodo = {};
-            console.log('adding todo', todo);
-            
+            todo.state = TODO_STATUS.OPEN; // Add state to the object
+            todo.id = id; // Add id to the object
+            id += 1; // Add 1 tot the id to make it unique
+            todos.push(todo); // Add the todo to the todos array
+            this.newTodo = {}; // Empty the newTodo object
+
             return todos;
         }
 
@@ -58,7 +56,7 @@
                 return;
             }
 
-            for(var todo in todos) {
+            for (var todo in todos) {
                 if (todos[todo].id === id) {
                     if (todos[todo].state === TODO_STATUS.COMPLETED) {
                         todos[todo].state = TODO_STATUS.OPEN;
