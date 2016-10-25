@@ -6,3 +6,7 @@ body {
     padding:10px 0;
     background: #fafafa;
 }
+
+.navbar-brand {
+    color: #ff4019 !important;
+}
